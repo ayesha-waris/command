@@ -1,0 +1,24 @@
+
+//////Create an input directory in HDFS.
+
+hadoop fs -mkdir /input_dir
+
+//////Copy the input text file named input_file.txt in the input directory (input_dir)of HDFS.
+
+hadoop fs -put C:/input_file.txt /input_dir
+
+//////Verify input_file.txt available in HDFS input directory (input_dir).
+
+hadoop fs -ls /input_dir/
+
+\\\\\\Verify content of the copied file.
+
+hadoop dfs -cat /input_dir/input_file.txt
+
+
+//////Run MapReduceClient.jar and also provide input and out directories.
+
+hadoop jar C:/hadoop-3.3.0/share/hadoop/hadoop-mapreduce-examples-3.3.0.jar wordcount /input_dir /output_dir
+
+
+
