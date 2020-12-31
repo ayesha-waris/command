@@ -13,7 +13,7 @@ hadoop fs -ls /input_dir/
 
 \\\\\\Verify content of the copied file.
 
-hadoop dfs -cat /input_dir/input_file.txt
+hadoop fs -cat /input_dir/input_file.txt
 
 
 //////Run MapReduceClient.jar and also provide input and out directories.
